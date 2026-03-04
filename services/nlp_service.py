@@ -6,7 +6,7 @@ import os
 router = APIRouter()
 
 # API Keys would normally be in a .env file, assuming mocking if not present
-GENAI_KEY = os.getenv("GEMINI_API_KEY", "AIzaSyBGlxImLD_sIUTB6E6pdKXzBUXgAeCBjlQ")
+GENAI_KEY = os.getenv("GEMINI_API_KEY", "")
 
 class PromptRequest(BaseModel):
     prompt: str
